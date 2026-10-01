@@ -9,5 +9,5 @@ for i in range (1000):
     x=r*math.cos(phi)
     y=r*math.sin(phi)
     turtle.goto(x,y)
-    turtle.mainloop()
+turtle.mainloop()
 
