@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 import random
 l=int(input())
-matdna=[]
-nucl=['A','T','C','G']
+dna=[]
 for i in range (l):
-    matdna.append(random.choice(nucl))
-print(matdna)
+    nucl=random.choice('ATGC')
+    dna.append(nucl)
+matdna=''.join(dna)
+with open ('dna.txt','w') as file:
+    file.write(matdna)
 
